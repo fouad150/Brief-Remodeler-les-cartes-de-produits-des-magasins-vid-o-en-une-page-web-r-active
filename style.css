@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 0;
     margin: 0;
@@ -48,11 +51,11 @@ ol{
     padding-left: 0px;
 }
 p{
-    max-width: 50%;
+    width: 50%;
 }
 
 .card{
-    max-width: 20%;
+    width: 20%;
     border: 1px solid black;
     padding: 15px;
     background-color: rgb(66, 20, 36);
@@ -60,7 +63,7 @@ p{
     
 }
 .card img{
-    max-width: 100%;
+    width: 100%;
 
 }
 .card h5{
@@ -80,13 +83,16 @@ p{
 }
 @media only screen and (max-width:700px){
     body{
-        font-size: 10px;
+        
+        font-size: 13px;
     }
     .header{
+        padding: 0px;
         display: block;
         width: 100%;
         background-color: black;
     }
+
     .brand{
         
         display:block;
@@ -96,26 +102,50 @@ p{
     }
     nav{
         display: block;
-    
+        
         width: 100%;
-        border: #fcfafb solid 1px;
+        
         
     }
     nav ul {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         list-style: none;
-        margin: 0px 5px;
-    
+        margin: 0px 0px;
+        padding: 4px ;
     }
-
+    nav ul li {
+        margin: 0;
+        border:1px solid #fcfafb;
+        padding: 5px;
+    }
    
     #parent{
         display: flex;
         flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .card{
         width: 100%;
+        margin-bottom: 20px;
     }
-   
+    section {
+        padding-top: 0px;
+        padding-bottom: 0px ;
+    }
+    ol{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    ol li{
+        margin:0px;
+        padding: 0px;
+        padding-right:6px ;
+      
+    }
 }
