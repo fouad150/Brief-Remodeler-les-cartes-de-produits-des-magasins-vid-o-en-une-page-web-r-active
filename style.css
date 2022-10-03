@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    color: aliceblue;
+    background-color: black;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #9d064a;
+}
+.header img {
+    width: 49px;
+}
+nav{
+    width: 80%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 30px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(253, 248, 248);
+}
+ol li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ol li a{
+    text-decoration: none;
+}
+section{
+    padding: 20px;
+}
+ol{
+    padding-left: 0px;
+}
+p{
+    max-width: 50%;
+}
+
+.card{
+    max-width: 20%;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgb(66, 20, 36);
+    border-radius: 7px;
+    
+}
+.card img{
+    max-width: 100%;
+
+}
+.card h5{
+    margin: 5px;
+}
+.card .green{
+    color: rgb(3, 182, 3);
+}
+.card .gray{
+    color: darkgray;
+}
+#parent{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    display: flex;
+}
+@media only screen and (max-width:700px){
+    body{
+        font-size: 10px;
+    }
+    .header{
+        display: block;
+        width: 100%;
+        background-color: black;
+    }
+    .brand{
+        
+        display:block;
+        background-color:#9d064a ;
+        
+
+    }
+    nav{
+        display: block;
+    
+        width: 100%;
+        border: #fcfafb solid 1px;
+        
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0px 5px;
+    
+    }
+
+   
+    #parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+   
+}
